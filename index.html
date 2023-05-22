@@ -21,10 +21,37 @@ canvas {
 }
     </style>
     <title>Reconocimiento Facial</title>
+
     <script src="face-api.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
     <video id="video" autoplay muted width="720" height="540"></video>
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo" style="color: aliceblue;"></p>
+    <script>
+        function myFunction() {
+        //   setTimeout(myFunction, 10000);
+          let random = Math.floor(Math.random() * (100 - 0 + 1) + 0);
+          console.log(random);
+          let mensajes = ["poco probable","probable","muy probable"]
+          let mensaje
+          if (random <= 75)
+            {
+                mensaje = mensajes[0]
+            }
+            else if (random <= 90)
+            {
+                mensaje= mensajes[1]
+            }
+            else 
+            {
+                mensaje= mensajes[2]
+            }
+          document.getElementById("demo").innerHTML = mensaje;
+          
+        }
+        </script>
+
 </body>
 </html>
