@@ -15,9 +15,10 @@ body {
     /* max-width: 720px; */
     border-radius: 12px;
     border: 4px solid #5d7b9d;
+    z-index: 1;
 }
 
-/* 
+
 button {
     padding: 10px 20px;
     background-color: #5d7b9d;
@@ -26,7 +27,8 @@ button {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-} */
+    z-index: 3;
+}
 
 p {
     color: #5d7b9d;
@@ -58,7 +60,8 @@ p {
 }
 
 canvas {
+    z-index: 2;
     position: relative;
-    top: -600px;
-    left: 500px;
+    top: -650px;
+    left: 600px;
 }

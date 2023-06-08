@@ -32,7 +32,7 @@ elVideo.addEventListener('play', async () => {
     document.body.append(canvas)
 
     // tamaño del canvas
-    const displaySize = { width: elVideo.width, height: elVideo.height }
+    const displaySize = { width: elVideo.width/1.25, height: elVideo.height/1.25 }
     faceapi.matchDimensions(canvas, displaySize)
 
     setInterval(async () => {
